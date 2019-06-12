@@ -1,4 +1,4 @@
-#weighted random forest with 5-fold cross validation 
+#weighted random forest with 5 fold cross-validation 
 library(caret)
 
 df <- read.csv("C:/workspaceR/creditcardfraud/creditcard.csv")
