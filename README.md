@@ -7,6 +7,6 @@ https://www.kaggle.com/mlg-ulb/creditcardfraud
 
 ---------------------
 EDIT: March 2020
-Analysis.R = caret package
-rf_tidymodels = tidymodels package
+Analysis.R = caret package\
+rf_tidymodels = tidymodels package\
 xgb_tidymodels = tidymodels package
