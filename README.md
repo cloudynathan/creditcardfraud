@@ -4,3 +4,9 @@ This project examines data associated with legitimate and fraudulent credit card
 
 To download the dataset: 
 https://www.kaggle.com/mlg-ulb/creditcardfraud
+
+---------------------
+EDIT: March 2020
+Analysis.R = caret package
+rf_tidymodels = tidymodels package
+xgb_tidymodels = tidymodels package
