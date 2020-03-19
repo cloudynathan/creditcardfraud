@@ -10,4 +10,4 @@ Analysis.R = caret package\
 rf_tidymodels.R = tidymodels package\
 xgb_tidymodels.R = tidymodels package\
 xgboost.py = scikit-learn\
-lightgbm.py = scikit-learn\
+lightgbm.py = scikit-learn
