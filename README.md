@@ -6,7 +6,8 @@ To download the dataset:
 https://www.kaggle.com/mlg-ulb/creditcardfraud
 
 ---------------------
-EDIT: March 2020\
 Analysis.R = caret package\
 rf_tidymodels.R = tidymodels package\
-xgb_tidymodels.R = tidymodels package
+xgb_tidymodels.R = tidymodels package\
+xgboost.py = scikit-learn\
+lightgbm.py = scikit-learn\
