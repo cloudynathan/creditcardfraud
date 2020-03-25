@@ -49,6 +49,7 @@ loaded_model = pickle.load(open("best_model.dat", "rb"))
 y_prob = loaded_model.predict_proba(X_test)[:,1]
 print('Test AUC:', roc_auc_score(y_test, y_prob))
 
+# compare default parameters with hyperparameters
 cross_val_score(LGBMClassifier(), X_train, y_train, cv=kf, scoring = 'roc_auc').mean()
 
 cross_val_score(grid.best_estimator_, X_train, y_train, cv=kf, scoring = 'roc_auc').mean()
