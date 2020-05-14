@@ -31,8 +31,8 @@ print(X_train.shape, X_test.shape)
 # Find the optimal hyperparameters using 5-fold grid search
 start = time()
 clf = svm.SVC(random_state=42)
-params = {'C': [0.01, 0.1, 1, 10], 'kernel':['linear', 'poly', 'rbf'], 'gamma':[.1, 1, 10]}
-# small C = larger area, large C = smaller area; kernal=liner,polynomial,possion(rbf); gamma=tune ends of poly; degree=tune ends of rbf
+params = {'C': [0.01, 0.1, 1, 10], 'kernel':['linear', 'poly', 'rbf'], 'gamma':[.1, 1, 10], 'degree':[1,2,3,4]}
+# small C = larger area, large C = smaller area; kernal=liner,polynomial,gaussian(rbf); gamma=tune ends of poly/rbf; degree=tune ends of rbf
 kf = StratifiedKFold(n_splits=5, shuffle=True, random_state=123)
 
 grid = GridSearchCV(clf, params, scoring='roc_auc', cv=kf, verbose=2, n_jobs=-1)
